@@ -1,0 +1,6 @@
+@ShoppingListProxy_HostAddress = http://localhost:5246
+
+GET {{ShoppingListProxy_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
