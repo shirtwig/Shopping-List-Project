@@ -74,7 +74,6 @@ BEGIN
 END
 GO
 
--- 2. יצירת פרוצדורות העזר עבור ה-Select (הן אלו שחסרות ל-API)
 CREATE OR ALTER PROCEDURE GetAllCategories 
 AS 
 BEGIN 
