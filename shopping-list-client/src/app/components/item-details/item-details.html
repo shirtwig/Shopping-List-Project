@@ -1,0 +1,15 @@
+<div *ngIf="item" style="direction: rtl; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <h2 style="color: #2d3436;">🔍 פרטי מוצר: {{ item.Name }}</h2>
+  <hr>
+  <div style="font-size: 1.1em; line-height: 1.8; color: #636e72;">
+    <p><strong>כמות נדרשת:</strong> {{ item.Amount }} {{ item.UnitName }}</p> <p><strong>תיאור:</strong> {{ item.Description || 'אין תיאור' }}</p>
+    <p><strong>קטגוריה:</strong> {{ item.CategoryName }}</p> <p><strong>סטטוס:</strong>
+      <span [style.color]="item.ColorHex" style="font-weight: bold;">
+        {{ item.StatusName }} </span>
+    </p>
+  </div>
+
+  <button routerLink="/list" style="margin-top: 20px; padding: 10px 20px; border-radius: 8px; border: 1px solid #ccc; background: white; cursor: pointer;">
+    🔙 חזרה לרשימה
+  </button>
+</div>
